@@ -56,7 +56,7 @@ export class City {
   }
   loadCity() {
     // 加载城市模型
-    loadFBx("/src/city/model/beijing.fbx").then(object => {
+    loadFBx("/model/beijing.fbx").then(object => {
       // console.log(object)
       // this.scene.add(object)
       object.traverse((child: THREE.Object3D) => {
