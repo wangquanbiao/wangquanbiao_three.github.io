@@ -7,7 +7,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './', // 关键：设置为相对路径，避免绝对路径导致的404
+  base: '/', // 关键：设置为相对路径，避免绝对路径导致的404
   plugins: [
     vue(),
     vueJsx(),
