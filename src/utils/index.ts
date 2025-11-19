@@ -7,7 +7,7 @@ export const loadFBx = (url: string): Promise<Group> => {
   return new Promise((resolve, reject) => {
     console.log('loadFBx', url);
     
-    fbxLoader.load(url, (object: Group) => {
+    fbxLoader.load('./model/beijing.fbx', (object: Group) => {
       resolve(object);
     }, undefined, (error: any) => {
       reject(error)
